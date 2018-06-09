@@ -6,6 +6,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    @school_class = SchoolClass.create(params.require(:school_class))
   end
 
   def show
